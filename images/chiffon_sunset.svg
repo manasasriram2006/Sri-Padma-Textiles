@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#ff7f66"/><stop offset="100%" stop-color="#f6b1c9"/></linearGradient></defs>
+  <rect width="640" height="820" fill="#fff6f1"/>
+  <rect x="34" y="34" width="572" height="752" rx="34" fill="url(#g)"/>
+  <path d="M88 208c112-46 224-46 336 0" stroke="#fff2cb" stroke-width="18" opacity="0.75"/>
+  <path d="M112 584c64-28 124-86 172-154 52 66 121 120 244 188H112z" fill="#ffffff" opacity="0.2"/>
+  <text x="320" y="716" text-anchor="middle" font-size="36" font-family="Georgia, serif" fill="#fffaf3">Chiffon Sunset</text>
+</svg>

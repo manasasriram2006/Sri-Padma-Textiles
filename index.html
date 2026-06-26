@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Padma Textiles â€” Premium Sarees Since 1978</title>
+    <meta name="description"
+        content="Shop premium handcrafted sarees from Sri Padma Textiles. Kanjivaram, Banarasi, Cotton, Designer sarees with custom design options. Trusted since 1978.">
+    <meta name="keywords"
+        content="sarees, silk sarees, kanjivaram, banarasi, cotton sarees, designer sarees, custom saree, indian textiles">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="announcement-bar">
+        <div class="container announcement-inner">
+            <span><i class="fas fa-truck"></i> Free Shipping on Orders Above ₹2,999</span>
+            <span class="announcement-divider">|</span>
+            <span><i class="fas fa-gift"></i> Use Code <strong>PADMA20</strong> for 20% Off</span>
+            <span class="announcement-divider">|</span>
+            <span><i class="fas fa-phone-alt"></i> Call Us: +91 98765 43210</span>
+        </div>
+    </div>
+
+    <!-- ===== MAIN HEADER ===== -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <a href="#home" class="logo" id="logoLink">
+                <img src="images/logo.svg" alt="Sri Padma Textiles Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">Sri Padma</span>
+                    <span class="logo-tagline">TEXTILES</span>
+                </div>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-bar" id="searchBar">
+                <div class="search-input-wrapper">
+                    <select id="searchCategory" class="search-category">
+                        <option value="all">All</option>
+                        <option value="kanjivaram">Kanjivaram</option>
+                        <option value="banarasi">Banarasi</option>
+                        <option value="cotton">Cotton</option>
+                        <option value="designer">Designer</option>
+                        <option value="bridal">Bridal</option>
+                    </select>
+                    <input type="text" id="searchInput" placeholder="Search for sarees, fabrics, collections..."
+                        autocomplete="off">
+                    <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="header-action-btn" id="locationBtn" title="Delivery Location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="action-text">Deliver to<br><strong>Select Location</strong></span>
+                </button>
+                <button class="header-action-btn" id="accountBtn" title="Account">
+                    <i class="fas fa-user"></i>
+                    <span class="action-text">Hello, Sign in<br><strong>Account</strong></span>
+                </button>
+                <button class="header-action-btn" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="action-text">Your<br><strong>Wishlist</strong></span>
+                    <span class="badge wishlist-count" id="wishlistCount">0</span>
+                </button>
+                <button class="header-action-btn cart-btn" id="cartBtn" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="action-text">Your<br><strong>Cart</strong></span>
+                    <span class="badge cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <div class="container nav-inner">
+                <button class="nav-toggle-menu" id="navAllCategories">
+                    <i class="fas fa-th"></i> All Categories
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active" data-page="home"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#shop" class="nav-link" data-page="shop">
+                            Shop by Category <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="mega-menu" id="megaMenu">
+                            <div class="mega-col">
+                                <h4>By Fabric</h4>
+                                <a href="#shop" data-page="shop" data-filter="silk" class="mega-link">Pure Silk
+                                    Sarees</a>
+                                <a href="#shop" data-page="shop" data-filter="cotton" class="mega-link">Cotton
+                                    Sarees</a>
+                                <a href="#shop" data-page="shop" data-filter="chiffon" class="mega-link">Chiffon
+                                    Sarees</a>
+                                <a href="#shop" data-page="shop" data-filter="georgette" class="mega-link">Georgette
+                                    Sarees</a>
+                                <a href="#shop" data-page="shop" data-filter="organza" class="mega-link">Organza
+                                    Sarees</a>
+                            </div>
+                            <div class="mega-col">
+                                <h4>By Region</h4>
+                                <a href="#shop" data-page="shop" data-filter="kanjivaram"
+                                    class="mega-link">Kanjivaram</a>
+                                <a href="#shop" data-page="shop" data-filter="banarasi" class="mega-link">Banarasi</a>
+                                <a href="#shop" data-page="shop" data-filter="chanderi" class="mega-link">Chanderi</a>
+                                <a href="#shop" data-page="shop" data-filter="pattu" class="mega-link">Pattu</a>
+                                <a href="#shop" data-page="shop" data-filter="tussar" class="mega-link">Tussar</a>
+                            </div>
+                            <div class="mega-col">
+                                <h4>By Occasion</h4>
+                                <a href="#shop" data-page="shop" data-filter="bridal" class="mega-link">Bridal
+                                    Collection</a>
+                                <a href="#shop" data-page="shop" data-filter="wedding" class="mega-link">Wedding
+                                    Sarees</a>
+                                <a href="#shop" data-page="shop" data-filter="festival" class="mega-link">Festival
+                                    Special</a>
+                                <a href="#shop" data-page="shop" data-filter="party" class="mega-link">Party Wear</a>
+                                <a href="#shop" data-page="shop" data-filter="casual" class="mega-link">Casual /
+                                    Daily</a>
+                            </div>
+                            <div class="mega-col mega-featured">
+                                <h4>Featured</h4>
+                                <div class="mega-featured-card">
+                                    <img src="images/saree_red_kanjivaram.svg" alt="Featured Collection">
+                                    <span>New Arrivals</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#customize" class="nav-link nav-highlight" data-page="customize"><i
+                                class="fas fa-magic"></i> Customize Saree</a></li>
+                    <li><a href="#shop" class="nav-link" data-page="shop" data-filter="new">New Arrivals</a></li>
+                    <li><a href="#shop" class="nav-link" data-page="shop" data-filter="bestseller">Bestsellers</a></li>
+                    <li><a href="#shop" class="nav-link nav-sale" data-page="shop" data-filter="sale"><i
+                                class="fas fa-bolt"></i> Sale</a></li>
+                    <li><a href="#shop" class="nav-link" data-page="shop" data-filter="bridal">Bridal</a></li>
+                    <li id="navOrdersLink" style="display: none;"><a href="#orders" class="nav-link"
+                            data-page="orders"><i class="fas fa-box"></i> My Orders</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MOBILE SIDEBAR NAV ===== -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <aside class="mobile-nav-sidebar" id="mobileNavSidebar">
+        <div class="mobile-nav-header">
+            <img src="images/logo.svg" alt="Logo" class="mobile-nav-logo">
+            <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mobile-nav-body">
+            <a href="#home" class="mobile-nav-link" data-page="home"><i class="fas fa-home"></i> Home</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop"><i class="fas fa-store"></i> Shop All</a>
+            <a href="#customize" class="mobile-nav-link" data-page="customize"><i class="fas fa-magic"></i> Customize
+                Saree</a>
+            <div class="mobile-nav-divider"></div>
+            <h4 class="mobile-nav-heading">Categories</h4>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="kanjivaram">Kanjivaram Silk</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="banarasi">Banarasi Silk</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="cotton">Cotton Sarees</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="chiffon">Chiffon Sarees</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="georgette">Georgette Sarees</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="designer">Designer Sarees</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="bridal">Bridal Collection</a>
+            <div class="mobile-nav-divider"></div>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="sale"><i class="fas fa-bolt"></i>
+                Sale</a>
+            <a href="#shop" class="mobile-nav-link" data-page="shop" data-filter="new"><i class="fas fa-star"></i> New
+                Arrivals</a>
+            <a href="#orders" class="mobile-nav-link" id="mobileOrdersLink" style="display: none;"><i
+                    class="fas fa-box"></i> My Orders</a>
+        </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="mainContent">
+
+        <!-- ============================== -->
+        <!-- ========= HOME PAGE ========== -->
+        <!-- ============================== -->
+        <section id="homePage" class="page active">
+
+            <!-- Hero Carousel -->
+            <div class="hero-carousel" id="heroCarousel">
+                <div class="hero-slides">
+                    <div class="hero-slide active" style="background-image: url('images/hero_banner.svg')">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <span class="hero-badge">Since 1978</span>
+                            <h1 class="hero-title">Timeless Elegance,<br>Woven in Tradition</h1>
+                            <p class="hero-subtitle">Discover our exquisite collection of handcrafted sarees â€” from
+                                the
+                                looms of Kanjivaram to the heritage of Banaras.</p>
+                            <div class="hero-actions">
+                                <a href="#shop" class="btn btn-primary btn-lg" data-page="shop">Shop Collection</a>
+                                <a href="#customize" class="btn btn-outline btn-lg" data-page="customize"><i
+                                        class="fas fa-magic"></i> Design Your Own</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide"
+                        style="background-image: linear-gradient(135deg, #1a0a2e 0%, #3d1c56 50%, #6b2fa0 100%)">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <span class="hero-badge">âœ¨ New Collection</span>
+                            <h1 class="hero-title">Bridal Dreams<br>Collection 2026</h1>
+                            <p class="hero-subtitle">Make your special day even more magical with our exclusive bridal
+                                sarees featuring hand-embroidered zari work.</p>
+                            <div class="hero-actions">
+                                <a href="#shop" class="btn btn-primary btn-lg" data-page="shop"
+                                    data-filter="bridal">View Bridal Collection</a>
+                                <a href="#shop" class="btn btn-outline btn-lg" data-page="shop" data-filter="new">New
+                                    Arrivals</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide"
+                        style="background-image: linear-gradient(135deg, #0d1b2a 0%, #1b3a4b 50%, #2d6a4f 100%)">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <span class="hero-badge">ðŸŽ¨ Customize</span>
+                            <h1 class="hero-title">Create Your<br>Perfect Saree</h1>
+                            <p class="hero-subtitle">Choose fabric, colors, borders, pallu, and weave â€” design a saree
+                                that's uniquely yours.</p>
+                            <div class="hero-actions">
+                                <a href="#customize" class="btn btn-primary btn-lg" data-page="customize">Start
+                                    Customizing</a>
+                                <a href="#shop" class="btn btn-outline btn-lg" data-page="shop">Browse Ready-made</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="hero-arrow hero-prev" id="heroPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="hero-arrow hero-next" id="heroNext"><i class="fas fa-chevron-right"></i></button>
+                <div class="hero-dots" id="heroDots"></div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-bar">
+                <div class="container">
+                    <div class="trust-items">
+                        <div class="trust-item">
+                            <i class="fas fa-certificate"></i>
+                            <div><strong>100% Authentic</strong><span>Genuine Handloom</span></div>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-truck"></i>
+                            <div><strong>Free Shipping</strong><span>Orders Above ₹2,999</span></div>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-undo"></i>
+                            <div><strong>Easy Returns</strong><span>7-Day Return Policy</span></div>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div><strong>Secure Payment</strong><span>100% Protected</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Cards -->
+            <section class="section categories-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Shop by Category</h2>
+                        <p class="section-subtitle">Explore our curated range of sarees for every occasion</p>
+                    </div>
+                    <div class="category-grid" id="categoryGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="section featured-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Featured Collection</h2>
+                        <p class="section-subtitle">Handpicked sarees loved by our customers</p>
+                        <div class="section-tabs" id="featuredTabs">
+                            <button class="tab-btn active" data-tab="bestseller">Bestsellers</button>
+                            <button class="tab-btn" data-tab="new">New Arrivals</button>
+                            <button class="tab-btn" data-tab="trending">Trending</button>
+                            <button class="tab-btn" data-tab="sale">On Sale</button>
+                        </div>
+                    </div>
+                    <div class="products-grid" id="featuredGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                    <div class="section-footer">
+                        <a href="#shop" class="btn btn-outline" data-page="shop">View All Products <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section new-arrivals-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Fresh New Arrivals</h2>
+                        <p class="section-subtitle">Just-added sarees with category-specific designs and colors</p>
+                    </div>
+                    <div class="products-grid" id="newArrivalsGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Promo Banner -->
+            <section class="promo-banner">
+                <div class="container">
+                    <div class="promo-grid">
+                        <div class="promo-card promo-customize">
+                            <div class="promo-content">
+                                <span class="promo-label">âœ¨ Exclusive Feature</span>
+                                <h3>Design Your Dream Saree</h3>
+                                <p>Choose from 10+ fabrics, 50+ colors, 15+ border styles, and create a masterpiece
+                                    that's uniquely yours.</p>
+                                <a href="#customize" class="btn btn-primary" data-page="customize">Start Customizing <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="promo-visual">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="promo-card promo-offer">
+                            <div class="promo-content">
+                                <span class="promo-label">ðŸ”¥ Limited Offer</span>
+                                <h3>Flat 30% Off</h3>
+                                <p>On Kanjivaram & Banarasi Silk Sarees. Use code <strong>SILK30</strong></p>
+                                <a href="#shop" class="btn btn-primary" data-page="shop" data-filter="sale">Shop Now <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="promo-visual">
+                                <span class="promo-discount">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trending Products -->
+            <section class="section trending-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Trending Now</h2>
+                        <p class="section-subtitle">Most popular picks this season</p>
+                    </div>
+                    <div class="products-scroll" id="trendingScroll">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="section testimonials-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">What Our Customers Say</h2>
+                        <p class="section-subtitle">Trusted by thousands of happy customers since 1978</p>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                            <p>"The Kanjivaram silk saree I ordered was absolutely stunning. The quality and
+                                craftsmanship is unmatched!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">P</div>
+                                <div><strong>Priya Sharma</strong><span>Verified Buyer</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                            <p>"I customized my bridal saree here and it turned out exactly how I dreamed. The
+                                customization tool is amazing!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">A</div>
+                                <div><strong>Ananya Reddy</strong><span>Verified Buyer</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                            <p>"Been shopping from Sri Padma for 10 years. Their Banarasi collection is the finest I've
+                                seen anywhere."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">M</div>
+                                <div><strong>Meera Iyer</strong><span>Verified Buyer</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter-section">
+                <div class="container">
+                    <div class="newsletter-inner">
+                        <div class="newsletter-content">
+                            <h3>Stay Updated</h3>
+                            <p>Subscribe to get exclusive offers, new collection alerts & style tips.</p>
+                        </div>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ============================== -->
+        <!-- ========= SHOP PAGE ========== -->
+        <!-- ============================== -->
+        <section id="shopPage" class="page">
+            <div class="container shop-layout">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar" id="shopSidebar">
+                    <div class="sidebar-header">
+                        <h3>Filters</h3>
+                        <button id="clearFilters" class="clear-filters-btn">Clear All</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="priceFilter">Price Range <i
+                                class="fas fa-chevron-down"></i></h4>
+                        <div class="filter-body" id="priceFilter">
+                            <div class="price-range-inputs">
+                                <input type="number" id="priceMin" placeholder="₹ Min" min="0">
+                                <span>â€”</span>
+                                <input type="number" id="priceMax" placeholder="₹ Max">
+                            </div>
+                            <input type="range" id="priceSlider" min="0" max="50000" value="50000" class="price-slider">
+                            <div class="price-range-labels">
+                                <span>₹0</span>
+                                <span id="priceSliderVal">₹50,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="fabricFilter">Fabric Type <i
+                                class="fas fa-chevron-down"></i></h4>
+                        <div class="filter-body" id="fabricFilter">
+                            <label class="filter-checkbox"><input type="checkbox" value="silk"> Pure Silk</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="cotton"> Cotton</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="chiffon"> Chiffon</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="georgette"> Georgette</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="organza"> Organza</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="crepe"> Crepe</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="linen"> Linen</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="tussar"> Tussar Silk</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="satin"> Satin</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="colorFilter">Color <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <div class="filter-body" id="colorFilter">
+                            <div class="color-swatches">
+                                <button class="color-swatch" data-color="red" style="background:#D32F2F"
+                                    title="Red"></button>
+                                <button class="color-swatch" data-color="maroon" style="background:#800020"
+                                    title="Maroon"></button>
+                                <button class="color-swatch" data-color="gold" style="background:#C4A265"
+                                    title="Gold"></button>
+                                <button class="color-swatch" data-color="blue" style="background:#1565C0"
+                                    title="Blue"></button>
+                                <button class="color-swatch" data-color="green" style="background:#2E7D32"
+                                    title="Green"></button>
+                                <button class="color-swatch" data-color="pink" style="background:#E91E8C"
+                                    title="Pink"></button>
+                                <button class="color-swatch" data-color="purple" style="background:#7B1FA2"
+                                    title="Purple"></button>
+                                <button class="color-swatch" data-color="orange" style="background:#EF6C00"
+                                    title="Orange"></button>
+                                <button class="color-swatch" data-color="yellow" style="background:#F9A825"
+                                    title="Yellow"></button>
+                                <button class="color-swatch" data-color="black" style="background:#212121"
+                                    title="Black"></button>
+                                <button class="color-swatch" data-color="white"
+                                    style="background:#FAFAFA;border:1px solid #ccc" title="White"></button>
+                                <button class="color-swatch" data-color="cream"
+                                    style="background:#FFFDD0;border:1px solid #ccc" title="Cream"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="occasionFilter">Occasion <i
+                                class="fas fa-chevron-down"></i></h4>
+                        <div class="filter-body" id="occasionFilter">
+                            <label class="filter-checkbox"><input type="checkbox" value="wedding"> Wedding</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="bridal"> Bridal</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="festival"> Festival</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="party"> Party Wear</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="casual"> Casual</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="office"> Office Wear</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="borderFilter">Border Type <i
+                                class="fas fa-chevron-down"></i></h4>
+                        <div class="filter-body" id="borderFilter">
+                            <label class="filter-checkbox"><input type="checkbox" value="temple"> Temple Border</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="zari"> Zari Border</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="contrast"> Contrast
+                                Border</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="threadwork"> Thread
+                                Work</label>
+                            <label class="filter-checkbox"><input type="checkbox" value="stonework"> Stone Work</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title" data-toggle="ratingFilter">Rating <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <div class="filter-body" id="ratingFilter">
+                            <label class="filter-checkbox"><input type="radio" name="rating" value="4"> â˜…â˜…â˜…â˜…â˜†
+                                &
+                                above</label>
+                            <label class="filter-checkbox"><input type="radio" name="rating" value="3"> â˜…â˜…â˜…â˜†â˜†
+                                &
+                                above</label>
+                            <label class="filter-checkbox"><input type="radio" name="rating" value="2"> â˜…â˜…â˜†â˜†â˜†
+                                &
+                                above</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Shop Content -->
+                <div class="shop-content">
+                    <div class="shop-topbar">
+                        <div class="shop-breadcrumb">
+                            <a href="#home">Home</a> <i class="fas fa-chevron-right"></i> <span id="shopBreadcrumb">All
+                                Sarees</span>
+                        </div>
+                        <div class="shop-controls">
+                            <button class="filter-toggle-btn" id="filterToggleBtn"><i class="fas fa-sliders-h"></i>
+                                Filters</button>
+                            <span class="results-count" id="resultsCount">0 products</span>
+                            <select id="sortSelect" class="sort-select">
+                                <option value="featured">Sort: Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Rating: High to Low</option>
+                                <option value="newest">Newest First</option>
+                                <option value="name-az">Name: A-Z</option>
+                            </select>
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid" id="viewGrid"><i
+                                        class="fas fa-th"></i></button>
+                                <button class="view-btn" data-view="list" id="viewList"><i
+                                        class="fas fa-list"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="active-filters" id="activeFilters"></div>
+                    <div class="products-grid shop-grid" id="shopGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                    <div class="shop-pagination" id="shopPagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- ====== CUSTOMIZE PAGE ======== -->
+        <!-- ============================== -->
+        <section id="customize" class="page">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-magic"></i> Saree Customization Studio</h2>
+                    <p class="section-subtitle">Design your dream saree step by step â€” choose fabric, colors, border,
+                        pallu, and more</p>
+                </div>
+
+                <div class="customizer-layout">
+                    <!-- Preview Panel -->
+                    <div class="customizer-preview">
+                        <div class="preview-card">
+                            <div class="preview-saree" id="customPreview">
+                                <div class="preview-body" id="previewBody"></div>
+                                <div class="preview-border-top" id="previewBorderTop"></div>
+                                <div class="preview-border-bottom" id="previewBorderBottom"></div>
+                                <div class="preview-pallu" id="previewPallu"></div>
+                                <div class="preview-motifs" id="previewMotifs"></div>
+                                <!-- AI Generated Image Overlay -->
+                                <div class="ai-image-overlay" id="aiImageOverlay">
+                                    <img id="aiGeneratedImage" alt="AI Generated Saree Preview">
+                                </div>
+                                <!-- Loading Spinner -->
+                                <div class="ai-loading" id="aiLoading">
+                                    <div class="ai-spinner"></div>
+                                    <p>Generating your saree with AI...</p>
+                                    <span class="ai-loading-sub">Powered by Pollinations.ai via your FastAPI backend</span>
+                                </div>
+                            </div>
+                            <div class="preview-info">
+                                <h3 id="previewTitle">Your Custom Saree</h3>
+                                <p id="previewDesc">Select options to see your design come to life</p>
+                                <div class="preview-price">
+                                    <span>Estimated Price:</span>
+                                    <strong id="previewPrice">₹0</strong>
+                                </div>
+                                <button class="btn btn-ai-generate" id="generateAiBtn">
+                                    <i class="fas fa-wand-magic-sparkles"></i> Generate AI Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Options Panel -->
+                    <div class="customizer-options">
+                        <!-- Step 1: Fabric -->
+                        <div class="customize-step" data-step="1">
+                            <div class="step-header">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <h4>Select Cloth / Fabric</h4>
+                                    <p>Choose the base material for your saree</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <div class="option-cards" id="fabricOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Color -->
+                        <div class="customize-step" data-step="2">
+                            <div class="step-header">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <h4>Choose Color</h4>
+                                    <p>Pick the primary color of your saree</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <div class="color-palette" id="colorOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                                <div class="custom-color-row">
+                                    <label>Custom Color:</label>
+                                    <input type="color" id="customColorPicker" value="#D32F2F">
+                                    <span id="customColorHex">#D32F2F</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Border -->
+                        <div class="customize-step" data-step="3">
+                            <div class="step-header">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <h4>Border Style</h4>
+                                    <p>Select border type and width</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <h5 class="step-sub-label">Border Type</h5>
+                                <div class="option-cards compact" id="borderOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                                <h5 class="step-sub-label">Border Width</h5>
+                                <div class="option-pills" id="borderWidthOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                                <h5 class="step-sub-label">Border Color</h5>
+                                <div class="color-palette small" id="borderColorOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Pallu -->
+                        <div class="customize-step" data-step="4">
+                            <div class="step-header">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <h4>Pallu Design</h4>
+                                    <p>Choose the pallu style for your saree</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <div class="option-cards compact" id="palluOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Design Pattern -->
+                        <div class="customize-step" data-step="5">
+                            <div class="step-header">
+                                <span class="step-number">5</span>
+                                <div>
+                                    <h4>Design / Pattern</h4>
+                                    <p>Select motif and body design for the saree</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <div class="option-cards compact" id="weaveOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6: Blouse -->
+                        <div class="customize-step" data-step="6">
+                            <div class="step-header">
+                                <span class="step-number">6</span>
+                                <div>
+                                    <h4>Blouse Option</h4>
+                                    <p>Include a matching blouse piece?</p>
+                                </div>
+                            </div>
+                            <div class="step-body">
+                                <div class="option-pills" id="blouseOptions">
+                                    <!-- Filled by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Summary & Actions -->
+                        <div class="customize-summary">
+                            <h4>Your Design Summary</h4>
+                            <div id="customSummary" class="summary-list"></div>
+                            <div class="customize-actions">
+                                <button class="btn btn-primary btn-lg" id="addCustomToCart">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart â€” <span
+                                        id="customTotalPrice">₹0</span>
+                                </button>
+                                <button class="btn btn-outline" id="resetCustomization">
+                                    <i class="fas fa-redo"></i> Reset All
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- ====== CHECKOUT PAGE ========= -->
+        <!-- ============================== -->
+        <section id="checkoutPage" class="page">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-lock"></i> Secure Checkout</h2>
+                    <p class="section-subtitle">Complete your purchase safely and securely</p>
+                </div>
+                <div class="checkout-layout">
+                    <div class="checkout-form-container">
+                        <form id="checkoutForm" class="checkout-form">
+                            <div class="form-section">
+                                <h4><i class="fas fa-map-marker-alt"></i> Shipping Address</h4>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" id="shipName" placeholder="Enter your full name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="tel" id="shipPhone" placeholder="Enter phone number" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Street Address</label>
+                                    <input type="text" id="shipAddress" placeholder="House no, Building name, Street"
+                                        required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" id="shipCity" placeholder="City" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input type="text" id="shipState" placeholder="State" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pincode</label>
+                                        <input type="text" id="shipZip" placeholder="6-digit Pincode" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <h4><i class="fas fa-credit-card"></i> Payment Method</h4>
+                                <div class="payment-options">
+                                    <label class="payment-option active">
+                                        <input type="radio" name="payment" value="cod" checked>
+                                        <div class="payment-option-content">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            <span>Cash on Delivery (COD)</span>
+                                        </div>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="online">
+                                        <div class="payment-option-content">
+                                            <i class="fas fa-university"></i>
+                                            <span>Online Payment (UPI / Card)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="checkout-summary-container">
+                        <div class="checkout-summary-card">
+                            <h4>Order Summary</h4>
+                            <div id="checkoutSummaryItems" class="checkout-items-list"></div>
+                            <div class="checkout-totals">
+                                <div class="total-row"><span>Subtotal</span><span id="checkoutSubtotal">₹0</span>
+                                </div>
+                                <div class="total-row"><span>Shipping</span><span id="checkoutShipping">Free</span>
+                                </div>
+                                <div class="total-row main"><span>Grand Total</span><span id="checkoutTotal">₹0</span>
+                                </div>
+                            </div>
+                            <button type="submit" form="checkoutForm" class="btn btn-primary btn-lg btn-block"
+                                id="placeOrderBtn">
+                                <i class="fas fa-check-circle"></i> Place Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- ======= ORDERS PAGE ========== -->
+        <!-- ============================== -->
+        <section id="ordersPage" class="page">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-box"></i> My Orders</h2>
+                    <p class="section-subtitle">View and track your past orders</p>
+                </div>
+                <div id="ordersList" class="orders-list">
+                    <!-- Filled by JS -->
+                </div>
+                <div id="ordersEmpty" class="orders-empty hidden">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>No orders found</h3>
+                    <p>You haven't placed any orders yet.</p>
+                    <a href="#shop" class="btn btn-primary">Start Shopping</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== PRODUCT DETAIL MODAL ===== -->
+    <div class="modal-overlay" id="productModalOverlay"></div>
+    <div class="product-modal" id="productModal">
+        <button class="modal-close" id="productModalClose"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+            <div class="product-detail-grid">
+                <div class="product-images">
+                    <div class="product-main-image" id="productMainImage"></div>
+                    <div class="product-thumbs" id="productThumbs"></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-badge" id="productBadge"></span>
+                    <h2 id="productDetailName"></h2>
+                    <div class="product-rating" id="productDetailRating"></div>
+                    <div class="product-price-detail">
+                        <span class="current-price" id="productDetailPrice"></span>
+                        <span class="original-price" id="productDetailOriginal"></span>
+                        <span class="discount-tag" id="productDetailDiscount"></span>
+                    </div>
+                    <p class="product-description" id="productDetailDesc"></p>
+                    <div class="product-meta" id="productDetailMeta"></div>
+                    <div class="product-quantity">
+                        <label>Quantity:</label>
+                        <div class="qty-control">
+                            <button class="qty-btn" id="qtyMinus">âˆ’</button>
+                            <input type="number" value="1" min="1" max="10" id="qtyInput">
+                            <button class="qty-btn" id="qtyPlus">+</button>
+                        </div>
+                    </div>
+                    <div class="product-actions-detail">
+                        <button class="btn btn-primary btn-lg" id="addToCartDetail"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</button>
+                        <button class="btn btn-outline btn-lg" id="buyNowDetail"><i class="fas fa-bolt"></i> Buy
+                            Now</button>
+                        <button class="btn btn-icon" id="wishlistDetail"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="product-features">
+                        <div class="feature"><i class="fas fa-truck"></i> Free Delivery</div>
+                        <div class="feature"><i class="fas fa-undo"></i> 7-Day Returns</div>
+                        <div class="feature"><i class="fas fa-certificate"></i> Authentic Product</div>
+                        <div class="feature"><i class="fas fa-shield-alt"></i> Secure Payment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Shopping Cart (<span id="cartItemCount">0</span>)</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <a href="#shop" class="btn btn-primary" data-page="shop">Start Shopping</a>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-coupon">
+                <input type="text" placeholder="Enter coupon code" id="couponInput">
+                <button class="btn btn-sm" id="applyCouponBtn">Apply</button>
+            </div>
+            <div class="cart-totals">
+                <div class="cart-total-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+                <div class="cart-total-row"><span>Discount</span><span id="cartDiscount"
+                        class="discount-text">-₹0</span></div>
+                <div class="cart-total-row"><span>Shipping</span><span id="cartShipping">Free</span></div>
+                <div class="cart-total-row total"><span>Total</span><span id="cartTotal">₹0</span></div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" id="checkoutBtn"><i class="fas fa-lock"></i> Proceed to
+                Checkout</button>
+        </div>
+    </aside>
+
+    <!-- ===== AUTH MODAL ===== -->
+    <div class="auth-overlay" id="authOverlay"></div>
+    <div class="auth-modal" id="authModal">
+        <button class="modal-close" id="authClose"><i class="fas fa-times"></i></button>
+        <div class="auth-content">
+            <div class="auth-brand">
+                <img src="images/logo.svg" alt="Logo" class="auth-logo">
+                <div class="auth-brand-text">
+                    <h2>Sri Padma Textiles</h2>
+                    <p>Your trusted saree destination since 1978</p>
+                </div>
+            </div>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login" id="loginTab"><i class="fas fa-sign-in-alt"></i> Sign
+                    In</button>
+                <button class="auth-tab" data-tab="register" id="registerTab"><i class="fas fa-user-plus"></i> Create
+                    Account</button>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form" id="loginForm" autocomplete="on">
+                <div class="auth-error" id="loginError"></div>
+                <div class="form-group">
+                    <label for="loginEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="Enter your email address" required
+                        autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword"><i class="fas fa-lock"></i> Password</label>
+                    <div class="input-password-wrapper">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password"
+                            required autocomplete="current-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('loginPassword', this)" tabindex="-1"><i
+                                class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="auth-options">
+                    <label class="remember-me"><input type="checkbox" id="rememberMe"> Remember me</label>
+                    <a href="#" class="auth-forgot">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginSubmitBtn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loading hidden"><i class="fas fa-spinner fa-spin"></i> Signing In...</span>
+                </button>
+                <div class="auth-divider"><span>or continue with</span></div>
+                <div class="social-auth">
+                    <button type="button" class="social-btn" onclick="showToast('Google login coming soon!','info')"><i
+                            class="fab fa-google"></i> Google</button>
+                    <button type="button" class="social-btn"
+                        onclick="showToast('Facebook login coming soon!','info')"><i class="fab fa-facebook-f"></i>
+                        Facebook</button>
+                </div>
+                <p class="auth-switch">Don't have an account? <button type="button" class="link-btn"
+                        onclick="document.getElementById('registerTab').click()">Create one now</button></p>
+            </form>
+
+            <!-- Register Form -->
+            <form class="auth-form hidden" id="registerForm" autocomplete="on">
+                <div class="auth-error" id="registerError"></div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="regName"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="regName" name="name" placeholder="Your full name" required
+                            autocomplete="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="regEmail" name="email" placeholder="Enter your email" required
+                        autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="regPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                    <input type="tel" id="regPhone" name="phone" placeholder="10-digit mobile number"
+                        autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword"><i class="fas fa-lock"></i> Password</label>
+                    <div class="input-password-wrapper">
+                        <input type="password" id="regPassword" name="password"
+                            placeholder="Create a strong password (min 6 chars)" required minlength="6"
+                            autocomplete="new-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('regPassword', this)" tabindex="-1"><i
+                                class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword"><i class="fas fa-lock"></i> Confirm Password</label>
+                    <div class="input-password-wrapper">
+                        <input type="password" id="regConfirmPassword" placeholder="Re-enter your password" required
+                            autocomplete="new-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('regConfirmPassword', this)" tabindex="-1"><i
+                                class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <label class="terms-check"><input type="checkbox" id="acceptTerms" required> I agree to the <a
+                        href="#">Terms of Service</a> &amp; <a href="#">Privacy Policy</a></label>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="registerSubmitBtn">
+                    <span class="btn-text">Create My Account</span>
+                    <span class="btn-loading hidden"><i class="fas fa-spinner fa-spin"></i> Creating Account...</span>
+                </button>
+                <p class="auth-switch">Already have an account? <button type="button" class="link-btn"
+                        onclick="document.getElementById('loginTab').click()">Sign in here</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== TOAST NOTIFICATIONS ===== -->
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <img src="images/logo.svg" alt="Sri Padma Textiles" class="footer-logo">
+                        <p>Crafting timeless elegance since 1978. Sri Padma Textiles brings you the finest handloom and
+                            designer sarees from across India.</p>
+                        <div class="footer-socials">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#shop">Shop All</a>
+                        <a href="#customize">Customize Saree</a>
+                        <a href="#shop" data-page="shop" data-filter="new">New Arrivals</a>
+                        <a href="#shop" data-page="shop" data-filter="sale">Sale</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Categories</h4>
+                        <a href="#shop" data-page="shop" data-filter="kanjivaram">Kanjivaram Silk</a>
+                        <a href="#shop" data-page="shop" data-filter="banarasi">Banarasi Silk</a>
+                        <a href="#shop" data-page="shop" data-filter="cotton">Cotton Sarees</a>
+                        <a href="#shop" data-page="shop" data-filter="designer">Designer Sarees</a>
+                        <a href="#shop" data-page="shop" data-filter="bridal">Bridal Collection</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Customer Service</h4>
+                        <a href="#">Track Order</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">Returns & Exchange</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

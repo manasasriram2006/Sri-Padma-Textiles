@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#163f9a"/><stop offset="100%" stop-color="#48a1ff"/></linearGradient></defs>
+  <rect width="640" height="820" fill="#eef6ff"/><rect x="36" y="36" width="568" height="748" rx="34" fill="url(#bg)"/>
+  <circle cx="468" cy="224" r="96" fill="#fff0b3" opacity="0.24"/><rect x="82" y="120" width="476" height="34" rx="14" fill="#f5d98a"/>
+  <rect x="82" y="664" width="476" height="62" rx="18" fill="#f5d98a"/><text x="320" y="420" text-anchor="middle" font-size="40" font-family="Georgia, serif" fill="#fef8ea">Banarasi</text>
+</svg>

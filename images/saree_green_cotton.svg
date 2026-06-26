@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#1f6d3f"/><stop offset="100%" stop-color="#7bc96f"/></linearGradient></defs>
+  <rect width="640" height="820" fill="#f5fbf2"/><rect x="36" y="36" width="568" height="748" rx="34" fill="url(#bg)"/>
+  <path d="M90 156h460M90 210h460M90 264h460M90 318h460M90 372h460M90 426h460M90 480h460M90 534h460M90 588h460" stroke="#d3b15c" stroke-width="8" opacity="0.45"/>
+  <text x="320" y="704" text-anchor="middle" font-size="38" font-family="Georgia, serif" fill="#fff9ef">Cotton Handloom</text>
+</svg>
