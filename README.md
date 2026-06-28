@@ -49,9 +49,3 @@ Sri-Padma-Textiles/
 │── images/
 │── requirements.txt
 ```
-
-## 👩‍💻 Author
-**Manasa Sriram**
-
-GitHub Repository:  
-https://github.com/manasasriram2006/Sri-Padma-Textiles
