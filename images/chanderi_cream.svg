@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#d8bb84"/><stop offset="100%" stop-color="#f6e9c4"/></linearGradient></defs>
-  <rect width="640" height="820" fill="#fffaf1"/>
-  <rect x="34" y="34" width="572" height="752" rx="34" fill="url(#g)"/>
-  <path d="M98 162h444M98 256h444M98 350h444M98 444h444M98 538h444M98 632h444" stroke="#c49d52" stroke-width="10" opacity="0.28"/>
-  <text x="320" y="714" text-anchor="middle" font-size="34" font-family="Georgia, serif" fill="#7d5a1b">Chanderi Gold Butta</text>
-</svg>
